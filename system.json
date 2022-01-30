@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate",
-  "title": "Boilerplate",
-  "description": "The Boilerplate system for FoundryVTT!",
-  "version": "1.1.1",
+  "name": "cbrpnk",
+  "title": "CBR+PNK",
+  "description": "A cyberpunk RPG by Emanoel Melo",
+  "version": "0.0.1",
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
-  "author": "Asacolips",
+  "author": "Simon Bergot",
   "esmodules": ["module/boilerplate.mjs"],
   "styles": ["css/boilerplate.css"],
   "scripts": [],
@@ -21,8 +21,8 @@
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
+  "url": "https://github.com/sbergot/foundry-cbrpnk",
+  "manifest": "https://raw.githubusercontent.com/sbergot/foundry-cbrpnk/master/system.json",
   "download": "",
   "license": "LICENSE.txt"
 }
