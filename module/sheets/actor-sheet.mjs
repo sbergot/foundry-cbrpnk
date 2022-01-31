@@ -68,8 +68,8 @@ export class CbrpnkActorSheet extends ActorSheet {
    */
   _prepareCharacterData(context) {
     // Handle ability scores.
-    for (let [k, v] of Object.entries(context.data.abilities)) {
-      v.label = game.i18n.localize(CONFIG.CBRPNK.abilities[k]) ?? k;
+    for (let [k, v] of Object.entries(context.data.approaches)) {
+      v.label = game.i18n.localize(CONFIG.CBRPNK.approaches[k]) ?? k;
     }
   }
 

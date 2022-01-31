@@ -1,22 +1,19 @@
 {
-  "CBRPNK.AbilityStr": "Strength",
-  "CBRPNK.AbilityCon": "Constitution",
-  "CBRPNK.AbilityDex": "Dexterity",
-  "CBRPNK.AbilityInt": "Intelligence",
-  "CBRPNK.AbilityWis": "Wisdom",
-  "CBRPNK.AbilityCha": "Charisma",
+  "CBRPNK.ApproachAggression" : "aggression",
+  "CBRPNK.ApproachSmartness" : "smartness",
+  "CBRPNK.ApproachEmpathy" : "empathy",
+  "CBRPNK.ApproachCaution" : "caution",
 
-  "CBRPNK.AbilityStrAbbr": "str",
-  "CBRPNK.AbilityConAbbr": "con",
-  "CBRPNK.AbilityDexAbbr": "dex",
-  "CBRPNK.AbilityIntAbbr": "int",
-  "CBRPNK.AbilityWisAbbr": "wis",
-  "CBRPNK.AbilityChaAbbr": "cha",
-
-  "CBRPNK.EffectCreate": "Create Effect",
-  "CBRPNK.EffectToggle": "Toggle Effect",
-  "CBRPNK.EffectEdit": "Edit Effect",
-  "CBRPNK.EffectDelete": "Delete Effect",
-
-  "CBRPNK.Add": "Add"
+  "CBRPNK.ApproachClose-combat" : "close-combat",
+  "CBRPNK.ApproachEndurance" : "endurance",
+  "CBRPNK.ApproachHacking" : "hacking",
+  "CBRPNK.ApproachInfluence" : "influence",
+  "CBRPNK.ApproachMobility" : "mobility",
+  "CBRPNK.ApproachObservation" : "observation",
+  "CBRPNK.ApproachPiloting" : "piloting",
+  "CBRPNK.ApproachRanged-combat" : "ranged-combat",
+  "CBRPNK.ApproachRigging" : "rigging",
+  "CBRPNK.ApproachSciences" : "sciences",
+  "CBRPNK.ApproachStreetwise" : "streetwise",
+  "CBRPNK.ApproachSurvival" : "survival"
 }

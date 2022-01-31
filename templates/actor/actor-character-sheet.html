@@ -5,7 +5,7 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-      {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+      <!-- {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
       <div class="resources grid grid-3col">
@@ -38,7 +38,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
     </div>
   </header>
 
@@ -63,12 +63,12 @@
           {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
           use both the "grid" and "grid-Ncol" class where "N" can be any number
           from 1 to 12 and will create that number of columns.  --}}
-          <div class="abilities flexcol">
-            {{#each data.abilities as |ability key|}}
-            <div class="ability flexrow flex-group-center">
-              <label for="data.abilities.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{ability.label}}</label>
-              <input type="text" name="data.abilities.{{key}}.value" value="{{ability.value}}" data-dtype="Number"/>
-              <span class="ability-mod rollable" data-roll="d20+@abilities.{{key}}.mod" data-label="{{ability.label}}">{{numberFormat ability.mod decimals=0 sign=true}}</span>
+          <div class="flexcol">
+            {{#each data.approaches as |approach key|}}
+            <div class="approach flexrow flex-group-center">
+              <label for="data.approaches.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@approaches.{{key}}.mod" data-label="{{approach.label}}">{{approach.label}}</label>
+              <input type="text" name="data.approaches.{{key}}.value" value="{{approach.value}}" data-dtype="Number"/>
+              <span class="rollable" data-roll="d20+@approaches.{{key}}.mod" data-label="{{approach.label}}">{{numberFormat approach.mod decimals=0 sign=true}}</span>
             </div>
             {{/each}}
           </div>
