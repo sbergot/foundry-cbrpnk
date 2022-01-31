@@ -5,7 +5,7 @@
     <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
     <div class="header-fields">
       <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
-      <!-- {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+      {{!-- The grid classes are defined in scss/global/_grid.scss. To use,
       use both the "grid" and "grid-Ncol" class where "N" can be any number
       from 1 to 12 and will create that number of columns.  --}}
       <div class="resources grid grid-3col">
@@ -14,15 +14,15 @@
         and it will add a small amount of padding, a border, and will
         center all of its child elements content and text. --}}
         <div class="resource flex-group-center">
-          <label for="data.health.value" class="resource-label">Health</label>
+          <label for="data.resources.stress.value" class="resource-label">Stress</label>
           <div class="resource-content flexrow flex-center flex-between">
-          <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number"/>
-          <span> / </span>
-          <input type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number"/>
+          <input type="text" name="data.resources.stress.value" value="{{data.resources.stress.value}}" data-dtype="Number"/>
+          <span> / {{data.resources.stress.max}}</span>
+          <!-- <input type="text" name="data.resources.stress.max" value="{{data.resources.stress.max}}" data-dtype="Number"/> -->
           </div>
         </div>
 
-        <div class="resource flex-group-center">
+        <!-- <div class="resource flex-group-center">
           <label for="data.power.value" class="resource-label">Power</label>
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="data.power.value" value="{{data.power.value}}" data-dtype="Number"/>
@@ -36,9 +36,9 @@
           <div class="resource-content flexrow flex-center flex-between">
           <input type="text" name="data.attributes.level.value" value="{{data.attributes.level.value}}" data-dtype="Number"/>
           </div>
-        </div>
+        </div> -->
 
-      </div> -->
+      </div>
     </div>
   </header>
 
@@ -66,9 +66,9 @@
           <div class="flexcol">
             {{#each data.approaches as |approach key|}}
             <div class="approach flexrow flex-group-center">
-              <label for="data.approaches.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="d20+@approaches.{{key}}.mod" data-label="{{approach.label}}">{{approach.label}}</label>
+              <label for="data.approaches.{{key}}.value" class="resource-label rollable flexlarge align-left" data-roll="(@approaches.{{key}}.value)d6kh" data-label="{{approach.label}}">{{approach.label}}</label>
               <input type="text" name="data.approaches.{{key}}.value" value="{{approach.value}}" data-dtype="Number"/>
-              <span class="rollable" data-roll="d20+@approaches.{{key}}.mod" data-label="{{approach.label}}">{{numberFormat approach.mod decimals=0 sign=true}}</span>
+              <span class="rollable" data-roll-type="action" data-roll-value="@approaches.{{key}}.value" data-label="{{approach.label}}">roll</span>
             </div>
             {{/each}}
           </div>

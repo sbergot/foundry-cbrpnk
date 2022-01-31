@@ -8,6 +8,31 @@
     },
     "character": {
       "templates": ["base"],
+      "resources": {
+        "stress": {
+          "value": 0,
+          "max": 7
+        },
+        "armors": {
+          "normal": false,
+          "heavy": false,
+          "special": false
+        },
+        "harm": {
+          "1": {
+            "value": 0,
+            "max": 2
+          },
+          "2": {
+            "value": 0,
+            "max": 2
+          },
+          "3": {
+            "value": 0,
+            "max": 1
+          }
+        }
+      },
       "approaches": {
         "aggression": {
           "value": 0,
@@ -29,51 +54,51 @@
       "skills": {
         "close-combat": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "endurance": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "hacking": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "influence": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "mobility": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "observation": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "piloting": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "ranged-combat": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "rigging": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "sciences": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "streetwise": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         },
         "survival": {
           "value": 0,
-          "speciality" : ""
+          "expertise" : ""
         }
       }
     },
