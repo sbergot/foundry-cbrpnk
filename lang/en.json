@@ -1,22 +1,22 @@
 {
-  "BOILERPLATE.AbilityStr": "Strength",
-  "BOILERPLATE.AbilityCon": "Constitution",
-  "BOILERPLATE.AbilityDex": "Dexterity",
-  "BOILERPLATE.AbilityInt": "Intelligence",
-  "BOILERPLATE.AbilityWis": "Wisdom",
-  "BOILERPLATE.AbilityCha": "Charisma",
+  "CBRPNK.AbilityStr": "Strength",
+  "CBRPNK.AbilityCon": "Constitution",
+  "CBRPNK.AbilityDex": "Dexterity",
+  "CBRPNK.AbilityInt": "Intelligence",
+  "CBRPNK.AbilityWis": "Wisdom",
+  "CBRPNK.AbilityCha": "Charisma",
 
-  "BOILERPLATE.AbilityStrAbbr": "str",
-  "BOILERPLATE.AbilityConAbbr": "con",
-  "BOILERPLATE.AbilityDexAbbr": "dex",
-  "BOILERPLATE.AbilityIntAbbr": "int",
-  "BOILERPLATE.AbilityWisAbbr": "wis",
-  "BOILERPLATE.AbilityChaAbbr": "cha",
+  "CBRPNK.AbilityStrAbbr": "str",
+  "CBRPNK.AbilityConAbbr": "con",
+  "CBRPNK.AbilityDexAbbr": "dex",
+  "CBRPNK.AbilityIntAbbr": "int",
+  "CBRPNK.AbilityWisAbbr": "wis",
+  "CBRPNK.AbilityChaAbbr": "cha",
 
-  "BOILERPLATE.EffectCreate": "Create Effect",
-  "BOILERPLATE.EffectToggle": "Toggle Effect",
-  "BOILERPLATE.EffectEdit": "Edit Effect",
-  "BOILERPLATE.EffectDelete": "Delete Effect",
+  "CBRPNK.EffectCreate": "Create Effect",
+  "CBRPNK.EffectToggle": "Toggle Effect",
+  "CBRPNK.EffectEdit": "Edit Effect",
+  "CBRPNK.EffectDelete": "Delete Effect",
 
-  "BOILERPLATE.Add": "Add"
+  "CBRPNK.Add": "Add"
 }

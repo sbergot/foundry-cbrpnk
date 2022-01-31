@@ -1,23 +1,21 @@
-export const BOILERPLATE = {};
+export const CBRPNK = {};
 
 /**
  * The set of Ability Scores used within the sytem.
  * @type {Object}
  */
- BOILERPLATE.abilities = {
-  "str": "BOILERPLATE.AbilityStr",
-  "dex": "BOILERPLATE.AbilityDex",
-  "con": "BOILERPLATE.AbilityCon",
-  "int": "BOILERPLATE.AbilityInt",
-  "wis": "BOILERPLATE.AbilityWis",
-  "cha": "BOILERPLATE.AbilityCha"
+ CBRPNK.abilities = {
+  "aggression": "CBRPNK.AbilityStr",
+  "smartness": "CBRPNK.AbilityDex",
+  "empathy": "CBRPNK.AbilityCon",
+  "caution": "CBRPNK.AbilityInt"
 };
 
-BOILERPLATE.abilityAbbreviations = {
-  "str": "BOILERPLATE.AbilityStrAbbr",
-  "dex": "BOILERPLATE.AbilityDexAbbr",
-  "con": "BOILERPLATE.AbilityConAbbr",
-  "int": "BOILERPLATE.AbilityIntAbbr",
-  "wis": "BOILERPLATE.AbilityWisAbbr",
-  "cha": "BOILERPLATE.AbilityChaAbbr"
+CBRPNK.abilityAbbreviations = {
+  "str": "CBRPNK.AbilityStrAbbr",
+  "dex": "CBRPNK.AbilityDexAbbr",
+  "con": "CBRPNK.AbilityConAbbr",
+  "int": "CBRPNK.AbilityIntAbbr",
+  "wis": "CBRPNK.AbilityWisAbbr",
+  "cha": "CBRPNK.AbilityChaAbbr"
 };

@@ -6,8 +6,8 @@
   "minimumCoreVersion": "0.8.6",
   "compatibleCoreVersion": "9",
   "author": "Simon Bergot",
-  "esmodules": ["module/boilerplate.mjs"],
-  "styles": ["css/boilerplate.css"],
+  "esmodules": ["module/cbrpnk.mjs"],
+  "styles": ["css/cbrpnk.css"],
   "scripts": [],
   "packs": [],
   "languages": [

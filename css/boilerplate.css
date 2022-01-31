@@ -223,17 +223,17 @@
   text-align: center;
 }
 
-/* Styles limited to boilerplate sheets */
-.boilerplate {
+/* Styles limited to cbrpnk sheets */
+.cbrpnk {
   /* ----------------------------------------- */
   /*  Items Lists                              */
   /* ----------------------------------------- */
-  /* Example style for Boilerplate (can be removed if not needed) */
+  /* Example style for Cbrpnk (can be removed if not needed) */
 }
-.boilerplate .item-form {
+.cbrpnk .item-form {
   font-family: "Roboto", sans-serif;
 }
-.boilerplate .sheet-header {
+.cbrpnk .sheet-header {
   -webkit-box-flex: 0;
   -ms-flex: 0 auto;
   flex: 0 auto;
@@ -252,49 +252,49 @@
   justify-content: flex-start;
   margin-bottom: 10px;
 }
-.boilerplate .sheet-header .profile-img {
+.cbrpnk .sheet-header .profile-img {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 100px;
   flex: 0 0 100px;
   height: 100px;
   margin-right: 10px;
 }
-.boilerplate .sheet-header .header-fields {
+.cbrpnk .sheet-header .header-fields {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-.boilerplate .sheet-header h1.charname {
+.cbrpnk .sheet-header h1.charname {
   height: 50px;
   padding: 0px;
   margin: 5px 0;
   border-bottom: 0;
 }
-.boilerplate .sheet-header h1.charname input {
+.cbrpnk .sheet-header h1.charname input {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.boilerplate .sheet-tabs {
+.cbrpnk .sheet-tabs {
   -webkit-box-flex: 0;
   -ms-flex: 0;
   flex: 0;
 }
-.boilerplate .sheet-body,
-.boilerplate .sheet-body .tab,
-.boilerplate .sheet-body .tab .editor {
+.cbrpnk .sheet-body,
+.cbrpnk .sheet-body .tab,
+.cbrpnk .sheet-body .tab .editor {
   height: 100%;
 }
-.boilerplate .tox .tox-editor-container {
+.cbrpnk .tox .tox-editor-container {
   background: #fff;
 }
-.boilerplate .tox .tox-edit-area {
+.cbrpnk .tox .tox-edit-area {
   padding: 0 8px;
 }
-.boilerplate .resource-label {
+.cbrpnk .resource-label {
   font-weight: bold;
 }
-.boilerplate .items-header {
+.cbrpnk .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -305,11 +305,11 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.boilerplate .items-header > * {
+.cbrpnk .items-header > * {
   font-size: 14px;
   text-align: center;
 }
-.boilerplate .items-header .item-name {
+.cbrpnk .items-header .item-name {
   font-weight: bold;
   padding-left: 5px;
   text-align: left;
@@ -317,7 +317,7 @@
   display: -ms-flexbox;
   display: flex;
 }
-.boilerplate .items-list {
+.cbrpnk .items-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -325,12 +325,12 @@
   scrollbar-width: thin;
   color: #444;
 }
-.boilerplate .items-list .item-list {
+.cbrpnk .items-list .item-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.boilerplate .items-list .item-name {
+.cbrpnk .items-list .item-name {
   -webkit-box-flex: 2;
   -ms-flex: 2;
   flex: 2;
@@ -345,12 +345,12 @@
   display: -ms-flexbox;
   display: flex;
 }
-.boilerplate .items-list .item-name h3, .boilerplate .items-list .item-name h4 {
+.cbrpnk .items-list .item-name h3, .cbrpnk .items-list .item-name h4 {
   margin: 0;
   white-space: nowrap;
   overflow-x: hidden;
 }
-.boilerplate .items-list .item-controls {
+.cbrpnk .items-list .item-controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,25 +361,25 @@
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
-.boilerplate .items-list .item-controls a {
+.cbrpnk .items-list .item-controls a {
   font-size: 12px;
   text-align: center;
   margin: 0 6px;
 }
-.boilerplate .items-list .item {
+.cbrpnk .items-list .item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 0 2px;
   border-bottom: 1px solid #c9c7b8;
 }
-.boilerplate .items-list .item:last-child {
+.cbrpnk .items-list .item:last-child {
   border-bottom: none;
 }
-.boilerplate .items-list .item .item-name {
+.cbrpnk .items-list .item .item-name {
   color: #191813;
 }
-.boilerplate .items-list .item .item-name .item-image {
+.cbrpnk .items-list .item .item-name .item-image {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
@@ -388,13 +388,13 @@
   border: none;
   margin-right: 5px;
 }
-.boilerplate .items-list .item-prop {
+.cbrpnk .items-list .item-prop {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.boilerplate .items-list .items-header {
+.cbrpnk .items-list .items-header {
   height: 28px;
   margin: 2px 0;
   padding: 0;
@@ -405,28 +405,28 @@
   border: 2px groove #eeede0;
   font-weight: bold;
 }
-.boilerplate .items-list .items-header > * {
+.cbrpnk .items-list .items-header > * {
   font-size: 12px;
   text-align: center;
 }
-.boilerplate .items-list .items-header .item-name {
+.cbrpnk .items-list .items-header .item-name {
   padding-left: 5px;
   text-align: left;
 }
-.boilerplate .item-formula {
+.cbrpnk .item-formula {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 200px;
   flex: 0 0 200px;
   padding: 0 8px;
 }
-.boilerplate .effects .item .effect-source,
-.boilerplate .effects .item .effect-duration,
-.boilerplate .effects .item .effect-controls {
+.cbrpnk .effects .item .effect-source,
+.cbrpnk .effects .item .effect-duration,
+.cbrpnk .effects .item .effect-controls {
   text-align: center;
   border-left: 1px solid #c9c7b8;
   border-right: 1px solid #c9c7b8;
   font-size: 12px;
 }
-.boilerplate .effects .item .effect-controls {
+.cbrpnk .effects .item .effect-controls {
   border: none;
 }
