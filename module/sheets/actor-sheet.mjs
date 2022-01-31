@@ -7,8 +7,8 @@ const RollStatus = {
   failure: "failure",
   partial: "partial",
   success: "success",
-  critical: "critical"
-}
+  critical: "critical",
+};
 
 /**
  * Extend the basic ActorSheet with some very simple modifications
@@ -234,18 +234,13 @@ export class CbrpnkActorSheet extends ActorSheet {
         let formula = "";
         const zeroSkill = value <= 0;
         if (zeroSkill) {
-          formula = "2d6";
+          formula = "2d6kl";
         } else {
-          formula = `${value}d6`;
+          formula = `${value}d6kh`;
         }
         const roll = new Roll(formula);
-        await roll.evaluate({async:true});
-        this.showActionRoll(roll, zeroSkill);
-        // roll.toMessage({
-        //   speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-        //   flavor: label,
-        //   rollMode: game.settings.get("core", "rollMode"),
-        // });
+        await roll.evaluate({ async: true });
+        this.showActionRoll(roll, zeroSkill, label);
         return roll;
       }
     }
@@ -267,9 +262,9 @@ export class CbrpnkActorSheet extends ActorSheet {
     return parseInt(Roll.replaceFormulaData(formula, this.actor.getRollData()));
   }
 
-  async showActionRoll(rolls, zeroSkill) {
+  async showActionRoll(rolls, zeroSkill, label) {
     // we are always rolling Nd6 so we have exactly 1 DiceTerm
-    const results = rolls.dice[0].results.map(r => r.result);
+    const results = rolls.dice[0].results.map((r) => r.result);
     let main_result = null;
     let second_result = null;
     if (zeroSkill) {
@@ -282,25 +277,29 @@ export class CbrpnkActorSheet extends ActorSheet {
       second_result = results[1] ?? 0;
     }
 
-    let roll_status = '';
+    let roll_status = "";
     if (main_result <= 3) {
       roll_status = RollStatus.failure;
     } else if (main_result <= 5) {
       roll_status = RollStatus.partial;
     } else if (main_result == 6) {
-      roll_status = second_result == 6
-        ? RollStatus.critical
-        : RollStatus.success;
+      roll_status =
+        second_result == 6 ? RollStatus.critical : RollStatus.success;
     }
 
-    const html = await renderTemplate("systems/cbrpnk/templates/chat/action-roll.html", { roll_status, rolls });
+    const level = zeroSkill ? 0 : results.length;
+    const toolTipHtml = await rolls.getTooltip();
+    const html = await renderTemplate(
+      "systems/cbrpnk/templates/chat/action-roll.html",
+      { roll_status, label, level, tooltip: toolTipHtml }
+    );
     let messageData = {
       speaker: ChatMessage.getSpeaker(),
       content: html,
       type: CONST.CHAT_MESSAGE_TYPES.ROLL,
-      roll: rolls
-    }
-  
-    CONFIG.ChatMessage.documentClass.create(messageData, {})
+      roll: rolls,
+    };
+
+    CONFIG.ChatMessage.documentClass.create(messageData, {});
   }
 }
