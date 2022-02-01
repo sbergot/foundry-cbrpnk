@@ -1,0 +1,22 @@
+<section>
+  <h1>Approaches</h1>
+  <div class="flexcol">
+    {{#each data.approaches as |approach key|}}
+    <div class="approach flexrow flex-align-center">
+      <label for="data.approaches.{{key}}.value" class="resource-label flex-align-left">{{approach.label}}</label>
+      <input type="number" name="data.approaches.{{key}}.value" value="{{approach.value}}" data-dtype="Number"/>
+      <input type="checkbox" name="data.approaches.{{key}}.glitchy" value="{{approach.glitchy}}" data-dtype="Boolean"/>
+    </div>
+    {{/each}}
+  </div>
+
+  <h1>Skills</h1>
+  <section class="main grid grid-2col">
+    {{#each data.skills as |skill key|}}
+    <div class="approach flexrow flex-align-center">
+      <label for="data.skills.{{key}}.value" class="resource-label flex-align-left">{{skill.label}}</label>
+      <input type="number" name="data.skills.{{key}}.value" value="{{skill.value}}" data-dtype="Number"/>
+    </div>
+    {{/each}}
+  </section>
+</section>

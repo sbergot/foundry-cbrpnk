@@ -67,6 +67,20 @@ Handlebars.registerHelper('toLowerCase', function(str) {
   return str.toLowerCase();
 });
 
+Handlebars.registerHelper('times', function(n, block) {
+  var accum = '';
+  for(var i = 0; i < n; ++i)
+      accum += block.fn({idx: i});
+  return accum;
+});
+
+Handlebars.registerHelper('gauge', function(n, value, block) {
+  var accum = '';
+  for(var i = 0; i < n; ++i)
+      accum += block.fn({idx: i, active: i < value });
+  return accum;
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

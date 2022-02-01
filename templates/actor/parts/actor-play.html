@@ -1,0 +1,33 @@
+<section>
+
+  <h1>Approaches</h1>
+  <div class="grid grid-7col">
+    {{#each data.approaches as |approach key|}}
+    <label for="data.approaches.{{key}}.value" class="resource-label rollable" data-roll-type="action" data-roll-value="@approaches.{{key}}.value" data-label="{{approach.label}}">{{approach.label}}</label>
+    <div class="flex-row gap-1">
+      {{#gauge 2 approach.value}}
+      <i class="gauge-cell {{#if active}}fas fa-plus{{/if}}"></i>
+      {{/gauge}}
+    </div>
+    <span class="grid-span-3">{{approach.detail}}</span>
+    <div class="flex-row gap-1 grid-span-2">
+      <input class="margin-0" type="checkbox" name="data.approaches.{{key}}.glitchy" value="{{approach.glitchy}}" data-dtype="Boolean"/>
+      <span>{{approach.glitch}}</span>
+    </div>
+    {{/each}}
+  </div>
+
+  <h1>Skills</h1>
+  <section class="main grid-span-2 grid grid-2col">
+    {{#each data.skills as |skill key|}}
+    <div class="approach flexrow">
+      <label for="data.skills.{{key}}.value" class="resource-label rollable" data-roll-type="action" data-roll-value="@skills.{{key}}.value" data-label="{{skill.label}}">{{skill.label}}</label>
+      <div class="flex-row gap-1">
+        {{#gauge 3 skill.value}}
+        <i class="gauge-cell {{#if active}}fas fa-plus{{/if}}"></i>
+        {{/gauge}}
+      </div>
+    </div>
+    {{/each}}
+  </section>
+</section>

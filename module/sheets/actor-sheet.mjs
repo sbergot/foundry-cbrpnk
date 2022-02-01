@@ -20,13 +20,13 @@ export class CbrpnkActorSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["cbrpnk", "sheet", "actor"],
       template: "systems/cbrpnk/templates/actor/actor-sheet.html",
-      width: 600,
+      width: 650,
       height: 600,
       tabs: [
         {
           navSelector: ".sheet-tabs",
           contentSelector: ".sheet-body",
-          initial: "features",
+          initial: "play",
         },
       ],
     });
@@ -82,9 +82,13 @@ export class CbrpnkActorSheet extends ActorSheet {
    * @return {undefined}
    */
   _prepareCharacterData(context) {
-    // Handle ability scores.
     for (let [k, v] of Object.entries(context.data.approaches)) {
-      v.label = game.i18n.localize(CONFIG.CBRPNK.approaches[k]) ?? k;
+      v.label = game.i18n.localize(CONFIG.CBRPNK.approaches(k)) ?? "error";
+      v.detail = game.i18n.localize(CONFIG.CBRPNK.approachesDetail(k)) ?? "error";
+      v.glitch = game.i18n.localize(CONFIG.CBRPNK.approachesGlitch(k)) ?? "error";
+    }
+    for (let [k, v] of Object.entries(context.data.skills)) {
+      v.label = game.i18n.localize(CONFIG.CBRPNK.skills(k)) ?? k;
     }
   }
 

@@ -11,5 +11,7 @@
     "systems/cbrpnk/templates/actor/parts/actor-items.html",
     "systems/cbrpnk/templates/actor/parts/actor-spells.html",
     "systems/cbrpnk/templates/actor/parts/actor-effects.html",
+    "systems/cbrpnk/templates/actor/parts/actor-edit.html",
+    "systems/cbrpnk/templates/actor/parts/actor-play.html",
   ]);
 };
